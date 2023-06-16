@@ -7,7 +7,8 @@ from src.models.ingredient import (
 def test_ingredient():
     bacon = Ingredient("bacon")
     assert bacon.name == "bacon"
-    assert bacon.restrictions == {Restriction.ANIMAL_DERIVED}
+    assert bacon.restrictions == {Restriction.ANIMAL_DERIVED,
+                                  Restriction.ANIMAL_MEAT}
     assert repr(bacon) == "Ingredient('bacon')"
 
     test_bacon = Ingredient("bacon")
