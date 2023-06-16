@@ -14,4 +14,3 @@ def test_ingredient():
     test_farinha = Ingredient("farinha")
     assert bacon.__hash__() == test_farinha.__hash__()
     assert bacon != test_farinha
-
